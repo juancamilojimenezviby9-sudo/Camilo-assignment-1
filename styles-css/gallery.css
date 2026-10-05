@@ -1,0 +1,222 @@
+body{
+ background-color: #8a8680;
+}
+
+.main{
+    padding: 20px;
+    height: 100%;
+    
+}
+
+.main-items{
+        gap: 15px;
+        display: grid;
+        grid-template: repeat(5, 120px) / repeat(4, 1fr);
+        grid-template-areas: "furniture furniture art art"
+        "furniture furniture art art"
+        "furniture furniture decor decor"
+        "architecture architecture decor decor"
+        "architecture architecture decor decor";
+
+    }
+
+    .furniture{
+        background-image: url(../images-bauhaus/bauhaus-signature-chair.jpg);
+        background-size: cover;
+        background-position: 50% 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        transition: transform 0.7s;
+        grid-area: furniture;
+
+      p{
+            margin: 10px;
+            width: 50%;
+            text-align: center;
+            font-size: 1.5rem;
+            background-color: black;
+            border: 2px solid gray;
+            color: white;
+        }
+    }
+
+    .furniture:hover{
+        transform: scale(1.02);
+    }
+
+    .art{
+        background-image: url(../images-bauhaus/bauhaus-geometric-pattern.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        transition: transform 0.7s;
+        grid-area: art;
+
+         p{
+            margin: 10px;
+            width: 50%;
+            text-align: center;
+            font-size: 1.5rem;
+            background-color: black;
+            border: 2px solid gray;
+            color: white;
+        }
+    }
+
+    .art:hover{
+        transform: scale(1.02);
+    }
+
+    .architecture{
+        background-image: url(../images-bauhaus/bauhaus-buildings);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        transition: transform 0.7s;
+        grid-area: architecture;
+
+        p{
+            margin: 10px;
+            width: 50%;
+            text-align: center;
+            font-size: 1.5rem;
+            background-color: black;
+            border: 2px solid gray;
+            color: white;
+        }
+    }
+
+    .architecture:hover{
+        transform: scale(1.02);
+    }
+
+     .decor{
+        background-image: url(../images-bauhaus/retro-bauhaus-lamp.webp);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        transition: transform 0.7s;
+        grid-area: decor;
+
+        p{
+            margin: 10px;
+            width: 50%;
+            text-align: center;
+            font-size: 1.5rem;
+            background-color: black;
+            border: 2px solid gray;
+            color: white;
+        }
+    }
+
+    .decor:hover{
+        transform: scale(1.02);
+    }
+
+    @media screen and (max-width: 660px){
+
+        .main-items{
+        gap: 15px;
+        display: grid;
+        grid-template: repeat(4, 120px) / repeat(5, 1fr);
+        grid-template-areas: "art art furniture furniture furniture"
+        "art art furniture furniture furniture"
+        "architecture architecture architecture decor decor"
+        "architecture architecture architecture decor decor";
+
+    }
+
+    .furniture{
+        background-image: url(../images-bauhaus/bauhaus-signature-chair.jpg);
+        background-size: cover;
+        background-position: 60% 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-area: furniture;
+
+      p{
+            margin: 10px;
+            width: 50%;
+            text-align: center;
+            font-size: 100%;
+            background-color: black;
+            border: 2px solid gray;
+            color: white;
+        }
+    }
+
+    .art{
+        background-image: url(../images-bauhaus/bauhaus-geometric-pattern.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-area: art;
+
+         p{
+            margin: 10px;
+            width: 50%;
+            text-align: center;
+            font-size: 100%;
+            background-color: black;
+            border: 2px solid gray;
+            color: white;
+        }
+    }
+
+    .architecture{
+        background-image: url(../images-bauhaus/Bauhaus-Buildings-block);
+        background-size: cover;
+        background-position: 10% 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-area: architecture;
+
+        p{
+            margin: 10px;
+            width: 60%;
+            text-align: center;
+            font-size: 100%;
+            background-color: black;
+            border: 2px solid gray;
+            color: white;
+        }
+    }
+
+     .decor{
+        background-image: url(../images-bauhaus/baushau-\ lamp);
+        background-size: cover;
+        background-position: 20% 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-area: decor;
+
+        p{
+            margin: 10px;
+            width: 50%;
+            text-align: center;
+            font-size: 100%;
+            background-color: black;
+            border: 2px solid gray;
+            color: white;
+        }
+    }
+        
+    }
+
+

@@ -1,0 +1,110 @@
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    height: 100vh
+}
+
+body{
+    height: 100%;
+    margin: 0;
+}
+
+.header, .footer{
+    font-family: 'Bauhaus 93', 'Bauhaus Modern', sans-serif;
+    padding: 15px;
+    color: rgb(10, 10, 10);
+    background-image: url(../images-bauhaus/stainless-steel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.name{
+   font-size: 3rem;
+   background-color: #c8302a;
+   border: 1px solid black;
+   padding: 0px 0px 0px 15px;
+   
+}
+
+.menu{
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+    
+}
+
+.menu-buttons{
+    border: 1px solid black;
+    background: linear-gradient(180deg, #686868 0%, #a5a5a5 25%, #e5e5e5 50%, #a5a5a5 75%, #686868 100%);
+    box-shadow: 3px 4px 3px;
+    border-radius: 1em;
+    color: rgb(8, 8, 8);
+    padding: 8px 12px;
+    text-align: center;
+    font-size: none;
+    font-family: 'Bauhaus 93', 'Bauhaus Modern', sans-serif;
+    cursor: pointer;
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+
+    &:hover{
+    box-shadow: 0 0 0 rgb(0, 0, 0), inset 1px 1px 1px rgb(5, 5, 5);
+    transform: translate(3px, 3px);    
+    }
+
+    }
+
+    .link-home{
+
+        text-decoration: none;
+        color: black;
+    }
+
+    .link-about{
+        text-decoration: none;
+        color: black;
+    }
+
+    .link-gallery{
+        text-decoration: none;
+        color: black;
+    }
+
+     .link-contact{
+        text-decoration: none;
+        color: black;
+    }
+
+    
+        
+.silver-line{
+    margin: 0;
+    padding: 7px 0px;
+    height: 15px;
+    width: 100%;
+    background: linear-gradient(
+        180deg, #787878 0%, #b5b5b5 25%, #e3e3e3 50%, #b5b5b5 75%, #787878 100%);
+        border: 1px solid #000000;
+}
+
+
+@media screen and (max-width: 660px){
+
+    .menu-buttons{
+    border: 1px solid black;
+    background: linear-gradient(180deg, #686868 0%, #a5a5a5 25%, #e5e5e5 50%, #a5a5a5 75%, #686868 100%);
+    box-shadow: 3px 4px 3px;
+    border-radius: 1em;
+    color: rgb(8, 8, 8);
+    padding: 5px 9px;
+    text-align: center;
+    font-size: none;
+    font-family: 'Bauhaus 93', 'Bauhaus Modern', sans-serif;
+    cursor: pointer;
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+    }
+}
