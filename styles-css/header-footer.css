@@ -50,6 +50,8 @@ body{
     font-family: 'Bauhaus 93', 'Bauhaus Modern', sans-serif;
     cursor: pointer;
     transition: box-shadow 0.5s ease, transform 0.5s ease;
+    text-decoration: none;
+    color: black;
 
     &:hover{
     box-shadow: 0 0 0 rgb(0, 0, 0), inset 1px 1px 1px rgb(5, 5, 5);
@@ -57,29 +59,6 @@ body{
     }
 
     }
-
-    .link-home{
-
-        text-decoration: none;
-        color: black;
-    }
-
-    .link-about{
-        text-decoration: none;
-        color: black;
-    }
-
-    .link-gallery{
-        text-decoration: none;
-        color: black;
-    }
-
-     .link-contact{
-        text-decoration: none;
-        color: black;
-    }
-
-    
         
 .silver-line{
     margin: 0;

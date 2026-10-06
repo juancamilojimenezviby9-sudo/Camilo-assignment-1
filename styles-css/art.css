@@ -44,6 +44,10 @@ grid-area: one;
     grid-area: six;
 }
 
+.sorry{
+    font-size: 4rem;
+}
+
 .fixed-bar{
     background-color: rgb(121, 116, 116, 0.5);
     backdrop-filter: saturate(7);
